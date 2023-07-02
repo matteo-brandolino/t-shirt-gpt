@@ -42,3 +42,4 @@ yarn.lock
 
 .history
 .vscode
+server/dist
