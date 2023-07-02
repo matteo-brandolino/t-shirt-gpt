@@ -24,7 +24,10 @@ const shirtModelPath = "/shirt_baked.glb";
 
 export default function TShirt() {
   const { settings } = useContext(TshirtContext) as TshirtContextType;
-  const logoTexture = useTexture("/test.png");
+  const logoTexture = useTexture(
+    settings.image.url ? settings.image.url : "/react.png"
+  );
+  console.log(settings.image);
 
   useFrame((state, delta) => {
     easing.dampC(materials.lambert1.color, settings.color, 0.25, delta);

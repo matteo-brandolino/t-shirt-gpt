@@ -21,8 +21,10 @@ class ImageCreatorService {
                 prompt: prompt,
                 n: 1,
                 size: "256x256",
+                response_format: "b64_json",
             });
-            return result.data.data[0].url;
+            const photoBase64 = result.data.data[0].b64_json;
+            return `data:image/png;base64,${photoBase64}`;
         });
     }
 }

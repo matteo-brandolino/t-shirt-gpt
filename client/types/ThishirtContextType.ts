@@ -2,7 +2,7 @@ import { ColorRepresentation } from "three";
 
 export type Image = {
   isLoading: Boolean;
-  url: String;
+  url: string;
 };
 export type Settings = {
   color: ColorRepresentation | [r: number, g: number, b: number];
