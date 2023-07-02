@@ -1,0 +1,15 @@
+.inputs-container {
+    @apply flex justify-around items-center mx-auto lg:w-1/3;
+    .inputs-form {
+        @apply max-h-52 w-4/5;
+        .inputs-div {
+            @apply bg-gray-700  flex items-center rounded-lg px-1.5 py-4;
+            .custom-input {
+                @apply text-sm overflow-y-hidden min-h-6 max-h-52 focus:outline-none textarea-xs w-full bg-transparent resize-none; 
+            }
+            .custom-icon {
+                cursor: pointer;
+            }
+        }
+    }
+}
