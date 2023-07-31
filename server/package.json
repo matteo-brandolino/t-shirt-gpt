@@ -14,12 +14,20 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@prisma/client": "^5.0.0",
+    "@types/nodemailer": "^6.4.8",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
+    "joi": "^17.9.2",
+    "jsonwebtoken": "^9.0.1",
     "module-alias": "^2.2.3",
+    "nodemailer": "^6.9.3",
     "openai": "^3.3.0",
     "ts-dotenv": "^0.9.1",
-    "typescript-ioc": "^3.2.2"
+    "typescript-ioc": "^3.2.2",
+    "utility-types": "^3.10.0",
+    "winston": "^3.10.0",
+    "xss": "^1.0.14"
   },
   "devDependencies": {
     "@types/chai": "^4.3.5",
@@ -28,15 +36,20 @@
     "@types/mocha": "^10.0.1",
     "@typescript-eslint/eslint-plugin": "^5.60.1",
     "@typescript-eslint/parser": "^5.60.1",
+    "argon2": "^0.30.3",
     "chai": "^4.3.7",
     "cors": "^2.8.5",
     "eslint": "^8.44.0",
+    "helmet": "^7.0.0",
+    "http-status": "^1.6.2",
     "mocha": "^10.2.0",
+    "prisma": "^5.0.0",
     "ts-node": "^10.9.1",
     "typescript": "^5.1.6"
   },
   "_moduleAliases": {
     "@controllers": "dist/controllers",
-    "@service": "dist/service"
+    "@service": "dist/service",
+    "@utils": "dist/utils"
   }
 }

@@ -24,6 +24,9 @@
             "@service/*": [
                 "./src/service"
             ],
+            "@utils/*": [
+                "./src/utils"
+            ],
         },
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true,
